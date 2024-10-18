@@ -1,0 +1,21 @@
+#include <stdio.h>
+int digits(int);
+int digits(int n)
+{
+    int res=0;
+    while(n>0)
+    {
+        res=res+n%10;
+        n=n/10;
+    }
+    return res;
+}
+void  main() {
+    int a[10]={12,22,33,44,55,66,77,88,99,100};
+    int sum=0;
+    for(int i=5;i<10;i++)
+    {
+        sum=sum+digits(a[i]);
+    }
+    printf("the key is %d",sum);
+}
