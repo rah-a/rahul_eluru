@@ -1,0 +1,15 @@
+#include<stdio.h>
+void fun(int a);
+int main()
+{
+	fun(10);
+	return 0;
+}
+void fun(int n)
+{
+	if(n>1)
+	{
+		fun(n-1);
+	}
+	printf("%d",n);
+}
